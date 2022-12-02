@@ -1,5 +1,7 @@
 footer {
     background-color: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container-address {
@@ -8,11 +10,6 @@ footer {
 
 }
 
-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-}
 
 
 address {
@@ -37,12 +34,11 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-weight: 400;
-
+&:not(:last-of-type) {
+        margin-bottom: 9px;
+    }
 }
 
-.contact-footer-item:not(:last-of-type) {
-    margin-bottom: 9px;
-}
 
 .footer-logo {
     margin: 0;
@@ -58,14 +54,15 @@ address {
     border-color: black 1px solid;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+            background-color: rgba(33, 150, 243, 1);
+    
+        }
 }
 
 
-.footer-icon__link:hover,
-.footer-icon__link:focus {
-    background-color: rgba(33, 150, 243, 1);
-
-}
 
 .footer-icons {
     margin: 0;
@@ -73,23 +70,25 @@ address {
     list-style: none;
 }
 
-.join__title {
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-    margin: 0;
-    margin-bottom: 20px;
-}
 
 .join {
     margin-left: 70px;
     margin-top: 12px;
+
+    &__title {
+    
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+            margin: 0;
+            margin-bottom: 20px;
+        }
 }
 
 .sign-up__form {
@@ -130,7 +129,7 @@ address {
 
 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
+   
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -169,21 +168,24 @@ address {
 
     color: #FFFFFF;
 
+    &:hover {
+            cursor: pointer;
+        }
+
+    &::after {
+
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/send-icon.svg');
+
+            position: absolute;
+            top: 13px;
+            right: 28px;
 }
 
-.btn__sign-up:hover {
-    cursor: pointer;
-
 }
 
-.btn__sign-up::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('../images/send-icon.svg');
 
-    position: absolute;
-    top: 13px;
-    right: 28px;
-}
+

@@ -2,32 +2,36 @@
     padding-top: 0;
     padding-bottom: 94px;
 
-  
+
+    &__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            margin: 0;
+    
+        }
+
+
+                &__pictures {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    margin-top: 50px;
+        
+                }
+           
 }
+ 
 
-.about__title {
-font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin: 0;
 
-}
-
-.about__pictures {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-top: 50px;
-
-}
-
-.about__pic:not(:last-child) {
-    margin-right: 30px;
-}
 
 .about__pic {
     display: block;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .about__overlay {
